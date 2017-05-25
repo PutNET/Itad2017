@@ -43,6 +43,23 @@
 			$('#fullpage').fullpage({
 				sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
 			});
+		
+			$('.image').hover(function(){
+				$(this).stop().animate(
+				{width: "20%",
+				height: "20%"},
+				500,
+				'linear');
+				//$(this).css("width", "15%");
+			},
+			function(){
+				$(this).stop().animate(
+				{width: "10%",
+				height: "15%"},
+				500,
+				'linear');
+			
+		});
 		});
 	</script>
 
@@ -70,7 +87,57 @@
 	    <div class="slide"><h1>And more text</h1></div>
 	</div>
 	<div class="section" id="section2"><h1>No wraps, no extra markup</h1></div>
-	<div class="section" id="section3"><h1>Just the simplest demo ever</h1></div>
+	<div class="section" id="section3">
+		<p id = "partner" >Partnerzy</p>
+		<div class="section-image">
+			<div class="image">
+				<img src="../logo/logo-apple.jpg" alt="siema">
+				<a href="www.onet.pl">Strona internetowa</a>
+			</div>
+			<div class="image">
+				<img src="../logo/call-me.jpg" alt="siema">
+				<a href="www.onet.pl">Strona internetowa</a>
+			</div>
+			<div class="image">
+				<img src="../logo/logo-2.jpg" alt="siema">
+				<a href="www.onet.pl">Strona internetowa</a>
+			</div>
+			<div class="image">
+				<img src="../logo/panda.jpg" alt="siema">
+				<a href="www.onet.pl">Strona internetowa</a>
+			</div>
+			<div class="image">
+				<img src="../logo/skype.png" alt="siema">
+				<a href="www.onet.pl">Strona internetowa</a>
+			</div>
+			<div class="image">
+				<img src="../logo/super-man.jpg" alt="siema">
+				<a href="www.onet.pl">Strona internetowa</a>
+			</div>		
+		</div>
+		<div class="section-image">
+			<div class="image">
+				<img src="../logo/logo-apple.jpg" alt="siema">
+				<a href="www.onet.pl">Strona internetowa</a>
+			</div>
+			<div class="image">
+				<img src="../logo/call-me.jpg" alt="siema">
+				<a href="www.onet.pl">Strona internetowa</a>
+			</div>
+			<div class="image">
+				<img src="../logo/panda.jpg" alt="siema">
+				<a href="www.onet.pl">Strona internetowa</a>
+			</div>
+			<div class="image">
+				<img src="../logo/skype.png" alt="siema">
+				<a href="www.onet.pl">Strona internetowa</a>
+			</div>
+			<div class="image">
+				<img src="../logo/super-man.jpg" alt="siema">
+				<a href="www.onet.pl">Strona internetowa</a>
+			</div>		
+		</div>
+	</div>
 	<div class="section" id="map"></div>
 	
 </div>

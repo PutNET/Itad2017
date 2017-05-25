@@ -1,12 +1,27 @@
 .test {
   color: blue;
   background-color: red; }
-  
-ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-around; }
-  
 
-nav {
-  margin-top: 30px; }
+#section3 {
+  font-size: 5px; }
+
+.section-image {
+  display: flex;
+  justify-content: center; }
+  .section-image > .image {
+    width: 10%;
+    height: 10%;
+    min-height: 100px; }
+    .section-image > .image > img {
+      height: 100%;
+      width: 100%; }
+    .section-image > .image > a {
+      visibility: hidden; }
+
+#partner {
+  font-size: 90px;
+  padding: 50px;
+  position: fixed;
+  top: 400%;
+  left: 0%;
+  right: 0%; }
