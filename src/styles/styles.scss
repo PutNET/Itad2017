@@ -11,27 +11,30 @@
 .section-image{
     display: flex;
     justify-content: center;
-   // margin-bottom:100px;
      &>.image{
         
         width: 10%;
         height: 10%;
         min-height: 100px;
-        &>img{
+        &>a>img{
             height: 100%;
             width: 100%;
         }
-        &>a{
-         visibility: hidden;
-        }
+      
     }
 }
+
 #partner{
-    font-size: 90px;
+    font-size: 60px;
     padding: 50px;
-    position: fixed;
-    top:400%;
-    left: 0%;
-    right: 0%;
+    //position: fixed;
+   // top:400%;
+    //left: 0%;
+   // right: 0%;
+}
+#media-patron{
+     font-size: 40px;
+    padding: 50px;
+   
 }
  
