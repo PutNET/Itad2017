@@ -1,12 +1,13 @@
 .test {
   color: blue;
   background-color: red; }
-  
-ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-around; }
-  
 
-nav {
-  margin-top: 30px; }
+#section3 {
+  font-size: 5px; }
+
+#map{
+  height: 100%;
+  width: 100%;
+  display: center;
+  justify-content: space-around;
+}
