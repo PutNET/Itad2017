@@ -8,4 +8,33 @@
     font-size: 5px;
 }
 
-    
+.section-image{
+    display: flex;
+    justify-content: center;
+     &>.image{
+        
+        width: 10%;
+        height: 10%;
+        min-height: 100px;
+        &>a>img{
+            height: 100%;
+            width: 100%;
+        }
+      
+    }
+}
+
+#partner{
+    font-size: 60px;
+    padding: 50px;
+    //position: fixed;
+   // top:400%;
+    //left: 0%;
+   // right: 0%;
+}
+#media-patron{
+     font-size: 40px;
+    padding: 50px;
+   
+}
+ 

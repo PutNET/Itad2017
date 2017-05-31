@@ -1,6 +1,7 @@
 .test {
   color: blue;
   background-color: red; }
+<<<<<<< HEAD
 
 #section3 {
   font-size: 5px; }
@@ -11,3 +12,27 @@
   display: center;
   justify-content: space-around;
 }
+=======
+
+#section3 {
+  font-size: 5px; }
+
+.section-image {
+  display: flex;
+  justify-content: center; }
+  .section-image > .image {
+    width: 10%;
+    height: 10%;
+    min-height: 100px; }
+    .section-image > .image > a > img {
+      height: 100%;
+      width: 100%; }
+
+#partner {
+  font-size: 60px;
+  padding: 50px; }
+
+#media-patron {
+  font-size: 40px;
+  padding: 50px; }
+>>>>>>> 074b395d8852b6c7fb08ffbb6cb0a77d020ebf2e
