@@ -47,26 +47,33 @@
 		
 			$('.image').hover(function(){
 				$('.firm',this).slideDown(500);
-				$(this).stop().animate(
-				{width: "15%",
+				$('.image').stop().animate(
+				{
+					width: "5%",
 				},
 				500,
 				'linear',
-				function(){ 
-				//	$('p',this).css("opacity", "100");
-				//$('p',this).css("visibility", "visible");
-				
-				}
 				);
-				
-				//$(this).css("width", "15%");
+				$(this).stop().animate(
+				{
+					width: "15%",
+				},
+				500,
+				'linear',
+				);
 			},
 			function(){
-				//$('p',this).css("visibility", "hidden");
-					$('p',this).slideUp(500);
+				$('p',this).slideUp(500);
+				$('.image').stop().animate(
+				{
+					width: "10%",
+				},
+				500,
+				'linear',
+				);
 				$(this).stop().animate(
-				{width: "10%",
-				height: "10%"
+				{
+					width: "10%",
 				},
 				500,
 				'linear',
@@ -86,7 +93,8 @@
 			<li><a href="#section0">Home</a></li>
 			<li><a href="#section1">About</a></li>
 			<li><a href="#section2">2</a></li>	
-			<li><a href="#section3">3</a><li>			
+			<li><a href="#section3">Partnerzy</a><li>	
+			<li><a href="#section4">Partnerzy</a><li>		
 			<li><a href="#map">Kontakt</a></li>
 		</ul>
 	</nav>
@@ -101,6 +109,7 @@
 	    <div class="slide"><h1>And more text</h1></div>
 	</div>
 	<div class="section" id="section2"><h1>No wraps, no extra markup</h1></div>
+	<div class="section section3" id="section3"></div>
 	<div class="section section3" id="section3">
 		<p id = "partner" >Partnerzy wydarzenia</p>
 		<div class="section-image" margin-top="10%">
@@ -109,7 +118,6 @@
 					<img src="../logo/logo-2.jpg" alt="siema">
 					<p class="firm">Siemens</p>
 				</a>
-				
 			</div>
 			<div class="image">
 				<a href="https://www.onet.pl">
@@ -202,6 +210,7 @@
 			</div>
 		</div>
 	</div>
+	
 	<div class="section" id="map"></div>
 	
 </div>
