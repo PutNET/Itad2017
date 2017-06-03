@@ -13,9 +13,11 @@
 	<link rel="stylesheet" type="text/css" href="dist/jquery.fullPage.min.css" />
 	<link rel="stylesheet" type="text/css" href="vendors/css/examples.css" />
 	<link rel="stylesheet" type="text/css" href="dist/styles.css">
+	<link rel="stylesheet" type="text/css" href="slider/zAccordion/examples/examples.css"/>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script src="slider/zAccordion/js/jquery.zaccordion.js"></script>
 
 	<script type="text/javascript" src="vendors/scrolloverflow.js"></script>
 
@@ -44,6 +46,23 @@
 			$('#fullpage').fullpage({
 				sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
 			});
+
+			$('#photo').click(function(){
+				$('.right-column').empty();
+				$('.hidden-div').css('display', 'block');
+
+			});
+
+			$("#example14").zAccordion({
+					tabWidth: "15%",
+					width: "100%",
+					height: "50%"
+				});
+				$(window).resize(function() {
+					$("#example14").height($(window).height());
+					$("#example14 li").height($(window).height());
+					$("#example14 img").height($(window).height());
+				});
 		
 			$('.image').hover(function(){
 				$('.firm',this).slideDown(500);
@@ -108,8 +127,35 @@
 	    <div class="slide"><h1>And text</h1></div>
 	    <div class="slide"><h1>And more text</h1></div>
 	</div>
-	<div class="section" id="section2"><h1>No wraps, no extra markup</h1></div>
-	<div class="section section3" id="section3"></div>
+	<div class="section" id="section2">
+<div class="section-header"></div>
+<div class="host-wrapper">
+<div class="left-column"><img id="photo" src="http://crossweb.pl/upload/gallery/cycles/1278/300x300/put.net_.png"/></div>
+<div class="right-column"><p>Grupa pasjonatów IT oraz technologii .NET.
+	 Prywatnie prowadzimy bary, prowadzimy konferencje, wygrywamy hackatony, tworzymy niesamowite programy i wyznaczamy trendy. </p></div>
+	 <div class="hidden-div ">
+		 
+		 <img class="img-circle" src="https://www.politiplatform.com/img/politicians/donald_trump/avatar.jpg">
+		 <img class="img-circle" src="https://www.politiplatform.com/img/politicians/donald_trump/avatar.jpg">
+		 <img class="img-circle" src="https://www.politiplatform.com/img/politicians/donald_trump/avatar.jpg">
+		 <img class="img-circle" src="https://www.politiplatform.com/img/politicians/donald_trump/avatar.jpg">
+		
+		 
+		 </div>
+</div>
+
+	</div>
+	<div class="section section3,5" id="section3,5">
+<ul id="example14">
+				<li><img src="http://gfx.antyradio.pl/var/antyradio/storage/images/muzyka/duperele/badania-potwierdzily-jaka-muzyke-najbardziej-lubia-psy-12959/969510-1-pol-PL/Badania-potwierdzily-jaka-muzyke-najbardziej-lubia-psy_article.jpg" width="100%" height="100%" alt="" /></li>
+				<li><img src="https://vignette2.wikia.nocookie.net/psy-i-szczeniaki/images/0/0f/Psy13.jpg/revision/latest?cb=20130512153137&path-prefix=pl" width="100%" height="100%" alt="" /></li>
+				<li><img src="http://warszawawpigulce.pl/wp-content/uploads/2015/03/dog-425067_12801.jpg" width="100%" height="100%" alt="" /></li>
+				<li><img src="http://warszawawpigulce.pl/wp-content/uploads/2015/03/dog-425067_12801.jpg" width="100%" height="100%" alt="" /></li>
+				<li><img src="http://warszawawpigulce.pl/wp-content/uploads/2015/03/dog-425067_12801.jpg" width="100%" height="100%" alt="" /></li>
+			</ul>
+
+
+	</div>
 	<div class="section section3" id="section3">
 		<p id = "partner" >Partnerzy wydarzenia</p>
 		<div class="section-image" margin-top="10%">
