@@ -39,25 +39,39 @@
     </script>
 	 
 	<script type="text/javascript">
+	$('.firm').slideUp();
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
 			});
 		
 			$('.image').hover(function(){
+				$('.firm',this).slideDown(500);
 				$(this).stop().animate(
 				{width: "15%",
-				height: "15%"},
+				},
 				500,
-				'linear');
+				'linear',
+				function(){ 
+				//	$('p',this).css("opacity", "100");
+				//$('p',this).css("visibility", "visible");
+				
+				}
+				);
+				
 				//$(this).css("width", "15%");
 			},
 			function(){
+				//$('p',this).css("visibility", "hidden");
+					$('p',this).slideUp(500);
 				$(this).stop().animate(
 				{width: "10%",
-				height: "10%"},
+				height: "10%"
+				},
 				500,
-				'linear');
+				'linear',
+				function(){ 
+				});
 			
 		});
 		});
@@ -92,59 +106,71 @@
 		<div class="section-image" margin-top="10%">
 			<div class="image">
 				<a href="https://www.onet.pl">
-					<img src="../logo/logo-apple.jpg" alt="siema">
+					<img src="../logo/logo-2.jpg" alt="siema">
+					<p class="firm">Siemens</p>
 				</a>
+				
 			</div>
 			<div class="image">
 				<a href="https://www.onet.pl">
-					<img src="../logo/call-me.jpg" alt="siema">
+					<img src="../logo/logo-2.jpg" alt="siema">
+					<p class="firm">Siemens</p>
 				</a>
 			</div>
 			<div class="image">
 				<a href="https://www.onet.pl">
 					<img src="../logo/logo-2.jpg" alt="siema">
+					<p class="firm">Siemens</p>
 				</a>
 			</div>
 			<div class="image">
 				<a href="https://www.onet.pl">
-					<img src="../logo/panda.jpg" alt="siema">
+					<img src="../logo/logo-2.jpg" alt="siema">
+					<p class="firm">Siemens</p>
 				</a>
 			</div>
 			<div class="image">
 				<a href="https://www.onet.pl">
-				<img src="../logo/skype.png" alt="siema">
+				<img src="../logo/logo-2.jpg" alt="siema">
+				<p class="firm">Siemens</p>
 				</a>
 			</div>
 			<div class="image">
 				<a href="https://www.onet.pl">
-				<img src="../logo/super-man.jpg" alt="siema">
+				<img src="../logo/logo-2.jpg" alt="siema">
+				<p class="firm">Siemens</p>
 				</a>
 			</div>		
 		</div>
 			<div class="section-image">
 			<div class="image">
 				<a href="https://www.onet.pl">
-					<img src="../logo/logo-apple.jpg" alt="siema">
-				</a>
-			</div>
-			<div class="image">
-				<a href="https://www.onet.pl">
-					<img src="../logo/call-me.jpg" alt="siema">
+					<img src="../logo/logo-2.jpg" alt="siema">
+					<p class="firm">Siemens</p>
 				</a>
 			</div>
 			<div class="image">
 				<a href="https://www.onet.pl">
 					<img src="../logo/logo-2.jpg" alt="siema">
+					<p class="firm">Siemens</p>
 				</a>
 			</div>
 			<div class="image">
 				<a href="https://www.onet.pl">
-				<img src="../logo/skype.png" alt="siema">
+					<img src="../logo/logo-2.jpg" alt="siema">
+					<p class="firm">Siemens</p>
 				</a>
 			</div>
 			<div class="image">
 				<a href="https://www.onet.pl">
-				<img src="../logo/super-man.jpg" alt="siema">
+				<img src="../logo/logo-2.jpg" alt="siema">
+				<p class="firm">Siemens</p>
+				</a>
+			</div>
+			<div class="image">
+				<a href="https://www.onet.pl">
+				<img src="../logo/logo-2.jpg" alt="siema">
+				<p class="firm">Siemens</p>
 				</a>
 			</div>		
 		</div>
@@ -152,22 +178,26 @@
 		<div class="section-image">	
 			<div class="image">
 				<a href="https://www.onet.pl">
-				<img src="../logo/spacja-tv.PNG" alt="siema">
+				<img src="../logo/logo-2.jpg" alt="siema">
+				<p class="firm">Siemens</p>
 				</a>
 			</div>
 			<div class="image">
 				<a href="https://www.onet.pl">
-				<img src="../logo/afera.PNG" alt="siema">
+				<img src="../logo/logo-2.jpg" alt="siema">
+				<p class="firm">Siemens</p>
 				</a>
 			</div>
 			<div class="image">
 				<a href="https://www.onet.pl">
-				<img src="../logo/wyd-el.PNG" alt="siema">
+				<img src="../logo/logo-2.jpg" alt="siema">
+				<p class="firm">Siemens</p>
 				</a>
 			</div>
 			<div class="image">
 				<a href="https://www.onet.pl">
-				<img src="../logo/wyd-inf.PNG" alt="siema">
+				<img src="../logo/logo-2.jpg" alt="siema">
+				<p class="firm">Siemens</p>
 				</a>
 			</div>
 		</div>

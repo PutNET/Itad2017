@@ -15,7 +15,7 @@
         
         width: 10%;
         height: 10%;
-        min-height: 100px;
+        //min-height: 100px;
         &>a>img{
             height: 100%;
             width: 100%;
@@ -36,5 +36,16 @@
      font-size: 40px;
     padding: 50px;
    
+}
+.firm {
+    font-size: 20px;
+    margin: 4px;
+    display: none;
+   // opacity: 0;
+    //filter: alpha(opacity=0);
+   // &>:hover {
+   // opacity: 1;
+   //  filter: alpha(opacity=50);
+   // }
 }
  
