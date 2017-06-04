@@ -17,6 +17,7 @@
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
 	<script src="slider/zAccordion/js/jquery.zaccordion.js"></script>
 
 	<script type="text/javascript" src="vendors/scrolloverflow.js"></script>
@@ -50,20 +51,31 @@
 			$('#photo').click(function(){
 				$('.right-column').empty();
 				$('.hidden-div').css('display', 'block');
-
 			});
 
-			$("#example14").zAccordion({
+	//ZAKOMENTOWANE BO NIE DZIAŁĄ JQuery przez to... u kogoś działą? 
+
+			/*$("#example14").zAccordion({
 					tabWidth: "15%",
 					width: "100%",
 					height: "500px"
-				});
+				});*/
 				$(window).resize(function() {
 					$("#example14").height($(window).height());
 					$("#example14 li").height($(window).height());
 					$("#example14 img").height($(window).height());
 				});
 		
+			$('.slide-wrap')
+				.after('<div class="menu">') //tworzymy nawigacje
+				.cycle({
+					fx: 'scrollHorz', //rodzaj animacji
+					speed: 'fast', //szybkość przejścia
+					timeout:3000, //czas między slajdami
+					next: '.slide-wrap',//określamy element, który przenosi nas do następnego slidu
+					pager: '.menu' //określamy nawigację
+			});
+				
 			$('.image').hover(function(){
 				$('.firm',this).slideDown(500);
 				$('.image').stop().animate(
@@ -134,28 +146,60 @@
 <div class="right-column"><p>Grupa pasjonatów IT oraz technologii .NET.
 	 Prywatnie prowadzimy bary, prowadzimy konferencje, wygrywamy hackatony, tworzymy niesamowite programy i wyznaczamy trendy. </p></div>
 	 <div class="hidden-div ">
-		 
 		 <img class="img-circle" src="https://www.politiplatform.com/img/politicians/donald_trump/avatar.jpg">
 		 <img class="img-circle" src="https://www.politiplatform.com/img/politicians/donald_trump/avatar.jpg">
 		 <img class="img-circle" src="https://www.politiplatform.com/img/politicians/donald_trump/avatar.jpg">
 		 <img class="img-circle" src="https://www.politiplatform.com/img/politicians/donald_trump/avatar.jpg">
-		
-		 
-		 </div>
+	</div>
 </div>
-
 	</div>
 	<div class="section section3,5" id="section3,5">
-<ul id="example14">
-				<li><img src="http://gfx.antyradio.pl/var/antyradio/storage/images/muzyka/duperele/badania-potwierdzily-jaka-muzyke-najbardziej-lubia-psy-12959/969510-1-pol-PL/Badania-potwierdzily-jaka-muzyke-najbardziej-lubia-psy_article.jpg" width="100%" height="100%" alt="" /></li>
-				<li><img src="https://vignette2.wikia.nocookie.net/psy-i-szczeniaki/images/0/0f/Psy13.jpg/revision/latest?cb=20130512153137&path-prefix=pl" width="100%" height="100%" alt="" /></li>
-				<li><img src="http://warszawawpigulce.pl/wp-content/uploads/2015/03/dog-425067_12801.jpg" width="100%" height="100%" alt="" /></li>
-				<li><img src="http://warszawawpigulce.pl/wp-content/uploads/2015/03/dog-425067_12801.jpg" width="100%" height="100%" alt="" /></li>
-				<li><img src="http://warszawawpigulce.pl/wp-content/uploads/2015/03/dog-425067_12801.jpg" width="100%" height="100%" alt="" /></li>
-			</ul>
-
-
+	<ul id="example14">
+		<li><img src="http://gfx.antyradio.pl/var/antyradio/storage/images/muzyka/duperele/badania-potwierdzily-jaka-muzyke-najbardziej-lubia-psy-12959/969510-1-pol-PL/Badania-potwierdzily-jaka-muzyke-najbardziej-lubia-psy_article.jpg" width="100%" height="100%" alt="" /></li>
+		<li><img src="https://vignette2.wikia.nocookie.net/psy-i-szczeniaki/images/0/0f/Psy13.jpg/revision/latest?cb=20130512153137&path-prefix=pl" width="100%" height="100%" alt="" /></li>
+		<li><img src="http://warszawawpigulce.pl/wp-content/uploads/2015/03/dog-425067_12801.jpg" width="100%" height="100%" alt="" /></li>
+		<li><img src="http://warszawawpigulce.pl/wp-content/uploads/2015/03/dog-425067_12801.jpg" width="100%" height="100%" alt="" /></li>
+		<li><img src="http://warszawawpigulce.pl/wp-content/uploads/2015/03/dog-425067_12801.jpg" width="100%" height="100%" alt="" /></li>
+	</ul>
 	</div>
+<div class="section section3 Itad2016" id="section3">
+		
+<section>
+	<p class="header_itad2016">Itad 2016 !</p>
+	<div class="section_itad2016">
+		<p>Siema</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pretium felis vel sem tempor lobortis. Vestibulum eget magna odio. Nulla ut sem sit amet sapien sollicitudin posuere. Nunc at ullamcorper lorem. Ut lacinia faucibus odio, quis mollis diam laoreet non. Cras in purus quis quam semper accumsan.</p>
+		<ul class="lista_itad2016">
+			<li>Jurek Owsiak</li>
+			<li>Wina Tuska</li>
+			<li>Jasne że Tusk</li>
+			<li>Justin Bieber</li>
+			<li>Mariolka</li>
+			<li>Jurek Owsiak</li>
+			<li>Wina Tuska</li>
+			<li>Jasne że Tusk</li>
+			<li>Justin Bieber</li>
+		</ul>
+		<!--Opis prelegentów zmieniany autmatico -->
+		<div class="preleg-descibe">
+		tutaj planuje zrobić zmieniających sie prelegentów którzy Byli, może zdjęcie i opis, 
+		Nie wiem jeszcze gdzie ten filmik z zeszłego roku.
+		</div>
+	</div>
+	<div class="slide-wrap">
+		<div class="slide-container group">
+			<img src="./img/carousel-item-3.jpg" width="266" height="400" alt="" />
+		</div><!-- SLIDE - KONIEC -->
+		<div class="slide-container group">
+			<img src="./img/carousel-item-1.jpg" width="400" height="266" alt="" />
+		</div><!-- SLIDE - KONIEC -->
+		<div class="slide-container group">
+			<img src="./img/carousel-item-2.jpg" width="400" height="266" alt="" />
+		</div><!-- SLIDE - KONIEC -->
+	</div><!-- SLIDER - KONIEC -->
+</section>
+
+</div>
 	<div class="section section3" id="section3">
 		<p id = "partner" >Partnerzy wydarzenia</p>
 		<div class="section-image" margin-top="10%">

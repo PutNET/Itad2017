@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .test {
   color: blue;
   background-color: red; }
@@ -28,6 +29,76 @@
   font-size: 20px;
   margin: 4px;
   display: none; }
+
+.slide-wrap {
+  margin-right: 5%;
+  width: 46%;
+  padding: 0 2%;
+  height: 400px;
+  border: 1px solid black; }
+
+.slide-container {
+  width: 100% !important;
+  height: 100% !important; }
+
+.slide-container img {
+  float: left;
+  width: 100%;
+  height: 100%; }
+
+.slide-container article {
+  float: left;
+  width: 60%; }
+
+.menu {
+  width: 50%;
+  margin-top: 20px;
+  margin-left: 50%;
+  text-align: center; }
+
+.menu a {
+  color: transparent;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  border: 5px solid #F5B0C8;
+  border-radius: 100%;
+  background: #8190D6;
+  margin: auto 5px; }
+
+.menu a.activeSlide {
+  border: none; }
+
+/*ta klasa generowana jest przez plugin - możemy ją jednak dowolnie ostylować*/
+.section_itad2016 {
+  font-size: 12px;
+  border: 1px black solid;
+  height: 400px;
+  width: 45%;
+  padding: 0 1%;
+  margin: 0 1%;
+  float: left;
+  text-align: justify; }
+
+.header_itad2016 {
+  font-size: 50px;
+  padding: 2%; }
+
+.lista_itad2016 {
+  font-size: 15px;
+  line-height: 130%;
+  float: left; }
+  .lista_itad2016 > :hover {
+    color: red; }
+
+.preleg-descibe {
+  width: 60%;
+  float: left;
+  margin: 4% 10%;
+  border: 1px solid black; }
+
+.Itad2016 {
+  background: #aaaaaa !important; }
 
 .left-column {
   width: 30%;
