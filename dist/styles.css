@@ -2,7 +2,12 @@
 .test {
   color: blue;
   background-color: red; }
-
+  #section0{
+    background-color: red;
+  }
+.fp-tableCell{
+    background-color: red;
+}
 #section3 {
   font-size: 5px;
   background: white; }
