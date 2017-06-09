@@ -1,13 +1,14 @@
 @charset "UTF-8";
+.fp-tableCell {
+  background-color: red; }
+
+.section0 {
+  background-color: red; }
+
 .test {
   color: blue;
   background-color: red; }
-  #section0{
-    background-color: red;
-  }
-.fp-tableCell{
-    background-color: red;
-}
+
 #section3 {
   font-size: 5px;
   background: white; }
@@ -194,3 +195,6 @@ div.hover {
 
 div.hover:hover div.appear {
   display: block; }
+
+.social {
+  font-size: 150px; }

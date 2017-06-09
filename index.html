@@ -14,6 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="vendors/css/examples.css" />
 	<link rel="stylesheet" type="text/css" href="dist/styles.css">
 	<link rel="stylesheet" type="text/css" href="slider/zAccordion/examples/examples.css"/>
+	<link rel="stylesheet" type="text/css" href="fontello-social/fontello-social/css/fontello.css"/>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
@@ -44,6 +45,28 @@
 	<script type="text/javascript">
 	$('.firm').slideUp();
 		$(document).ready(function() {
+
+			$(".hover").hover(function(){
+				$(this).css("font-size", "200px");
+				$(this).css("cursor", "pointer");
+				if($(this).hasClass("icon-facebook-official")){
+					$(".icon-facebook-official").css("color", "#3b5998");
+				}
+				if($(this).hasClass("icon-twitter")){
+					$(".icon-twitter").css("color", "#7EB3CD");
+				}
+				if($(this).hasClass("icon-gplus")){
+					$(".icon-gplus").css("color", "#d34836");
+				}
+				if($(this).hasClass("icon-mail-alt")){
+					$(".icon-mail-alt").css("color", "#6BD506");
+				}
+			}, function(){
+				$(this).css("font-size", "150px");
+				$(this).css("color", "black");
+				});
+
+
 			$('#fullpage').fullpage({
 				sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
 			});
@@ -124,17 +147,18 @@
 			<li><a href="#section3">Partnerzy</a><li>	
 			<li><a href="#section4">Partnerzy</a><li>		
 			<li><a href="#map">Kontakt</a></li>
+			<li><a href="#section5">Kontakt</a></li>
 		</ul>
 	</nav>
 	<div class="section active" id="section0">
 		
 	</div>
 	
-	<div class="section" id="section1">
-	    <div class="slide "><h1>Simple Demo</h1></div>
-	    <div class="slide active"><h1>Only text</h1></div>
-	    <div class="slide"><h1>And text</h1></div>
-	    <div class="slide"><h1>And more text</h1></div>
+	<div class="section social" id="section1">
+		<i class="hover icon-facebook-official"></i>
+	    <i class="hover icon-twitter"></i>
+		<i class="hover icon-gplus"></i>
+		<i class="hover icon-mail-alt"></i>
 	</div>
 	<div class="section" id="section2">
 <div class="section-header"></div>
@@ -305,6 +329,9 @@
 	</div>
 	
 	<div class="section" id="map"></div>
+	<div class="section5" id="contact">
+		
+	</div>
 	
 </div>
 
