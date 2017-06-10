@@ -1,66 +1,9 @@
-
-@charset "UTF-8";
-/*Strona główna*/
-.mainPage .fp-tableCell {
-  vertical-align: top; }
-
-.headerItad {
-  display: flex;
-  background-color: black;
-  width: 100%; }
-
-.title {
-  margin: 2% 0 2% 0;
-  color: white;
-  font-family: 'Lato', sans-serif; }
-  .title p i {
-    margin-right: 3%; }
-
-.navigation {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .navigation ul {
-    margin-right: 6%;
-    width: 100%;
-    display: flex;
-    justify-content: space-around; }
-    .navigation ul p {
-      font-family: 'Lato', sans-serif;
-      font-size: 1.6rem; }
-      .navigation ul p a {
-        position: relative;
-        color: #fff;
-        text-decoration: none; }
-      .navigation ul p a:hover {
-        color: #fff; }
-      .navigation ul p a:before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        bottom: -40%;
-        left: 0;
-        background-color: #fff;
-        visibility: hidden;
-        -webkit-transform: scaleX(0);
-        transform: scaleX(0);
-        -webkit-transition: all 0.3s ease-in-out 0s;
-        transition: all 0.3s ease-in-out 0s; }
-      .navigation ul p a:hover:before {
-        visibility: visible;
-        -webkit-transform: scaleX(1);
-        transform: scaleX(1); }
-
-/*koniec strony głownej*/
-
 .section0 {
   background-color: red; }
 
 .test {
   color: blue;
   background-color: red; }
-
 
 #section3 {
   font-size: 5px;
