@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 /*Strona główna*/
 .mainPage .fp-tableCell{
     vertical-align:top;
+=======
+.fp-tableCell{
+   // background-color: red;
+>>>>>>> ebf4cc346322fede9d571439b76cc172c94d3765
 }
 .headerItad{
     display: flex;
@@ -75,7 +80,6 @@
         
         width: 10%;
         height: 10%;
-        //min-height: 100px;
         &>a>img{
             height: 100%;
             width: 100%;
@@ -87,10 +91,6 @@
 #partner{
     font-size: 60px;
     padding: 50px;
-    //position: fixed;
-   // top:400%;
-    //left: 0%;
-   // right: 0%;
 }
 #media-patron{
      font-size: 40px;
@@ -101,20 +101,12 @@
     font-size: 20px;
     margin: 4px;
     display: none;
-   // opacity: 0;
-    //filter: alpha(opacity=0);
-   // &>:hover {
-   // opacity: 1;
-   //  filter: alpha(opacity=50);
-   // }
 }
 .slide-wrap {
-     //margin-top: 10%;
-   //  margin-left: 40%; 
      margin-right: 5%;
      width:46%; 
      padding: 0 2%;
-     height:400px;
+     height:500px;
      border: 1px solid black;
      }
  .slide-container {
@@ -123,7 +115,6 @@
 }
 
 .slide-container img {float:left; width: 100%; 
-//margin:0 5%;
     height: 100%;}
 
 .slide-container article {float:left; width:60%;}
@@ -134,39 +125,12 @@
     text-align:center;
 }
 
-.menu a {color:transparent; display:inline-block; width:2em; height:2em; border:5px solid #F5B0C8; border-radius:100%; background:#8190D6; margin:auto 5px;}
+.menu a {color:transparent; display:inline-block; width:1em; height:1em; border:none; border-radius:100%; background:#8190D6; margin:auto 5px;}
 
-.menu a.activeSlide {border:none;} /*ta klasa generowana jest przez plugin - możemy ją jednak dowolnie ostylować*/
+.menu a.activeSlide {
+    border:3px solid #444444;
+} 
 
-.section_itad2016{
-    font-size: 12px;
-    border: 1px black solid;
-    height: 400px;
-    width: 45%;
-    padding: 0 1%;;
-    margin: 0 1%;
-    float: left;
-    text-align: justify;
-}
-.header_itad2016{
-    font-size: 50px;
-    padding: 2%;
-}
-.lista_itad2016{
-    font-size: 15px;
-    line-height: 130%;
-    float: left;
-    &>:hover{
-        color:red;
-    }
-}
-
-.preleg-descibe{
-    width: 60%;
-    float: left;
-    margin: 4% 10%;
-    border: 1px solid black;
-}
 .Itad2016{
     background: #aaaaaa !important; 
 
@@ -277,5 +241,62 @@ div.hover  {
 }
 div.hover:hover div.appear {
     display:block;
+}
+
+.social{
+    font-size: 150px;
+}
+
+
+
+.section_itad2016{
+    font-size: 12px;
+    border: 1px black solid;
+    height: 500px;
+    width: 45%;
+    padding: 0 1%;;
+    margin: 0 1%;
+    float: left;
+    text-align: center;
+        &>h1{
+            font-size: 34px;
+        }
+        &>h2{
+            font-size: 28px;
+        }
+        &>p{
+            font-size: 10px;
+            text-align: justify;
+        }
+        &>.preleg-descibe{
+
+            width: 74%;
+            height: 30%;
+            margin: auto;
+
+            float: left;
+            font-size: 12px;
+            text-align: justify;
+            //margin: 4% 10%;
+           // border: 1px solid black;
+                &>#change_descibe{
+                text-align: center;
+                font-size: 30px;
+             }
+        }
+        &>#logo_prelegent{
+            float: left;
+            width: 20%;
+            height: 20%;
+            margin: 3%;
+            //background-image:url("http://webkod.pl/files/css/obrazek-01.png");
+          
+            //background-image: url("./logo/logo-2.jpg");
+           // background-size: 24% 24%;
+        }
+}
+.header_itad2016{
+    font-size: 50px;
+    padding: 2%;
 }
  
