@@ -288,3 +288,128 @@ div.hover:hover div.appear {
 #map {
   height: 100%;
   width: 50%; }
+
+.mainPage .fp-tableCell {
+  vertical-align: top; }
+
+.headerItad {
+  display: flex;
+  background-color: black;
+  width: 100%; }
+
+.title {
+  margin: 2% 0 2% 0;
+  color: white;
+  font-family: 'Lato', sans-serif; }
+  .title .letter {
+    color: red; }
+
+.title p i {
+  margin-right: 3%; }
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.navigation ul {
+  margin-right: 6%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around; }
+
+.navigation ul p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6rem; }
+
+.navigation ul p a {
+  position: relative;
+  color: #fff;
+  text-decoration: none; }
+
+.navigation ul p a:hover {
+  color: #fff; }
+
+.navigation ul p a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -40%;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s; }
+
+.navigation ul p a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1); }
+
+.mainWrapper {
+  box-sizing: border-box;
+  padding: 3% 0 0 10%; }
+
+.square.large.logo {
+  width: 12vw;
+  height: 12vw;
+  background-color: #1685c9;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .square.large.logo span {
+    font-size: 550%; }
+
+.logo-item {
+  width: 100px;
+  height: 100px;
+  margin: 0.3% 0.3% 0 0; }
+
+.itad-1 {
+  background-color: #f44336; }
+
+.itad-2 {
+  background-color: #b71c1c; }
+
+.itad-3 {
+  background-color: #e91e63; }
+
+.itad-4 {
+  background-color: #880e4f; }
+
+.itad-5 {
+  background-color: #9c27b0; }
+
+.itad-6 {
+  background-color: #4a148c; }
+
+.itad-7 {
+  background-color: #2196f3; }
+
+.itad-8 {
+  background-color: #0d47a1; }
+
+.itad-9 {
+  background-color: #00bcd4; }
+
+.itad-10 {
+  background-color: #4caf50; }
+
+.itad-11 {
+  background-color: #1b5e20; }
+
+.itad-12 {
+  background-color: #ffeb3b; }
+
+.itad-13 {
+  background-color: #f57f17; }
+
+.itad-14 {
+  background-color: #ff5722; }
+
+#logo-square-content .row {
+  display: flex; }

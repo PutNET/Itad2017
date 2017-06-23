@@ -35,6 +35,8 @@
 	<link rel="stylesheet" type="text/css" href="dist/styles.css">
 	<!--<link rel="stylesheet" type="text/css" href="slider/zAccordion/examples/examples.css"/>-->
 	<link rel="stylesheet" type="text/css" href="fontello-social/fontello-social/css/fontello.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="slider/zAccordion/examples/examples.css"/>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
@@ -42,6 +44,7 @@
 	<script type="text/javascript" src="dist/jquery.fullPage.min.js"></script>
 	<script type="text/javascript" src="dist/scripts.js"></script>
 	<script src="dist/map.js"></script>
+	<script src="slider/zAccordion/js/jquery.zaccordion.js"></script>
 
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKx8o8-vpFQpChHbHDZtgrZhFy8cORrdI&callback=initMap">
     </script>
@@ -50,14 +53,59 @@
 
 <body>
 	<div id="fullpage">
-		<div class="section active">
-			<ul>
-				<li><a href="#home">Strona główna</a></li>
-				<li><a href="#about">O wydarzeniu</a></li>
-				<li><a href="#partners">Partnerzy</a></li>
-				<li><a href="#partners">Prelegenci</a></li>
-				<li><a href="#contact">Kontakt</a></li>
-			</ul>
+		<div class="section active mainPage">
+			        <header class = "row">
+            <div class= "headerItad">
+                <div class="col-md-4 title"><p><i class="fa fa-terminal" aria-hidden="true"></i>I<span class="letter">T</span> Academic Day</p></div>
+                <nav class="col-md-7 col-md-offset-1 navigation">
+                    <ul>
+                        <li>
+                            <p><a href="#section0">O wydarzeniu</a></p>
+                        </li>
+                        <li>
+                            <p><a href="#section1">Agenda</a></p>
+                        </li>
+                        <li>
+                            <p><a href="#section2">Organizatorzy</a></p>
+                        </li>
+                        <li>
+                            <p><a href="#section3">Partnerzy</a></p>
+                        </li>
+                        <li>
+                            <p><a href="#section4">ITAD 2016</a></p>
+                        </li>              
+                        <li>
+                            <p><a href="#map">Lokalizacja</a></p>
+                        </li>
+                        <li>
+                            <p><a href="#">Kontakt</a></p>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class = "mainWrapper">
+            <!--Main Logo-->
+                    <div class="row">
+                        <div class="col-md-5 square large logo">
+                            <div>
+                                <span>IT</span>
+                            </div>
+                           
+                        </div>      
+                    </div>
+                    <!--/Main Logo-->
+                    <!--Logo square content-->
+                    <div id="logo-square-content">
+                        <div class="row">
+                        </div>
+                        <div class="row">
+                        </div>
+                        <div class="row">
+                        </div>
+                    </div>
+                    <!--/Logo square content-->
+                    </div>
+        </header>
 		</div>
 
 		<div class="section" id="home">
