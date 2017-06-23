@@ -1,5 +1,7 @@
-.section0 {
-  background-color: red; }
+.shadow {
+  -webkit-box-shadow: 3px 3px 10px 0px black;
+  -moz-box-shadow: 3px 3px 10px 0px black;
+  box-shadow: 3px 3px 10px 0px black; }
 
 .test {
   color: blue;
@@ -222,3 +224,67 @@ div.hover:hover div.appear {
   float: right;
   padding: 10px;
   margin-right: 200px; }
+
+.icon-sample, .icon-facebook-official, .icon-twitter, .icon-gplus, .icon-mail-alt {
+  transition: all .3s ease; }
+  .icon-sample:hover, .icon-facebook-official:hover, .icon-twitter:hover, .icon-gplus:hover, .icon-mail-alt:hover {
+    color: black;
+    font-size: 1.2em; }
+
+.icon-facebook-official:hover {
+  color: #3b5998; }
+
+.icon-twitter:hover {
+  color: #1b95e0; }
+
+.icon-gplus:hover {
+  color: #d34836; }
+
+.icon-mail-alt:hover {
+  color: #4caf50; }
+
+.flex-div, .white-stripe {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.white-stripe {
+  flex-direction: column;
+  height: 30vh;
+  background: white;
+  color: #454545;
+  transform: rotate(3deg) scale(1.1); }
+  .white-stripe > p {
+    transform: scale(0.9);
+    font-size: 20px; }
+
+.section {
+  background-size: cover;
+  background-attachment: fixed; }
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: .5; }
+
+#about {
+  background-image: url(http://skipperkongen.dk/wp-content/uploads/2017/05/27340232-triangles-wallpapers.jpg); }
+
+#home {
+  background-image: url(https://wallpaperbrowse.com/media/images/Background-4.jpg); }
+
+#partners {
+  background-image: url(http://www.planwallpaper.com/static/images/518071-background-hd_xO1TwRc.jpg); }
+
+.contact-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+
+#map {
+  height: 100%;
+  width: 50%; }

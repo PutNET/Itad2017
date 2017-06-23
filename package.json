@@ -1,6 +1,6 @@
 {
   "name": "itad2k17",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "PUT ITAD 2017 Website",
   "main": "dist/jquery.fullpage.js",
   "scripts": {

@@ -6,267 +6,111 @@
 	<title>ITAD 2017</title>
 	<meta name="author" content="Jakub Białek, Damian Dziuba, Patryk Kuśmierkiewicz, Oskar Lindenau" />
 	<meta name="description" content="PUT ITAD 2017 website" />
-	<meta name="keywords"  content="itad, politechnika,poznanska,2017" />
+	<meta name="keywords" content="itad, politechnika,poznanska,2017" />
 	<meta name="Resource-type" content="Document" />
 	<meta nane="viewport" content="initial-scale=1.0">
 
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
 	<link rel="stylesheet" type="text/css" href="dist/jquery.fullPage.min.css" />
 	<link rel="stylesheet" type="text/css" href="vendors/css/examples.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+		crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="dist/styles.css">
-	<link rel="stylesheet" type="text/css" href="slider/zAccordion/examples/examples.css"/>
-	<link rel="stylesheet" type="text/css" href="fontello-social/fontello-social/css/fontello.css"/>
+	<!--<link rel="stylesheet" type="text/css" href="slider/zAccordion/examples/examples.css"/>-->
+	<link rel="stylesheet" type="text/css" href="fontello-social/fontello-social/css/fontello.css" />
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-	<script src="slider/zAccordion/js/jquery.zaccordion.js"></script>
 	<script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
-
-	<script type="text/javascript" src="vendors/scrolloverflow.js"></script>
-
 	<script type="text/javascript" src="dist/jquery.fullPage.min.js"></script>
-	<script type="text/javascript" src="scripts.js"></script>
-	<script>
-      function initMap() {
-        var uluru = {lat: 52.403837, lng: 16.949819};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 16,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
+	<script type="text/javascript" src="dist/scripts.js"></script>
+	<script src="dist/map.js"></script>
+
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKx8o8-vpFQpChHbHDZtgrZhFy8cORrdI&callback=initMap">
     </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKx8o8-vpFQpChHbHDZtgrZhFy8cORrdI&callback=initMap">
-    </script>
-	 
-	<script type="text/javascript">
-	
-	$('.firm').slideUp();
-		$(document).ready(function() {
-
-			for(var i = 1; i<22; i++){
-		document.getElementById('slide-wrap-add').innerHTML += '<div class="slide-container group"><img src="./ITAD16/zd ('+i+').jpg"  alt="" /></div>'
-			
-	}
-			$(".hover").hover(function(){
-				$(this).css("font-size", "200px");
-				$(this).css("cursor", "pointer");
-				if($(this).hasClass("icon-facebook-official")){
-					$(".icon-facebook-official").css("color", "#3b5998");
-				}
-				if($(this).hasClass("icon-twitter")){
-					$(".icon-twitter").css("color", "#7EB3CD");
-				}
-				if($(this).hasClass("icon-gplus")){
-					$(".icon-gplus").css("color", "#d34836");
-				}
-				if($(this).hasClass("icon-mail-alt")){
-					$(".icon-mail-alt").css("color", "#6BD506");
-				}
-			}, function(){
-				$(this).css("font-size", "150px");
-				$(this).css("color", "black");
-				});
-
-
-			$('#fullpage').fullpage({
-				sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
-			});
-
-			$('#photo').click(function(){
-				$('.right-column').empty();
-				$('.hidden-div').css('display', 'block');
-
-			});
-			$('.slide-wrap')
-				.after('<div class="menu">') //tworzymy nawigacje
-				.cycle({
-					fx: 'scrollHorz', //rodzaj animacji
-					speed: 'fast', //szybkość przejścia
-					timeout:3000, //czas między slajdami
-					next: '.slide-wrap',//określamy element, który przenosi nas do następnego slidu
-					pager: '.menu' //określamy nawigację
-			});
-			$("#example14").zAccordion({
-					tabWidth: "15%",
-					width: "100%",
-					height: "500px"
-				});
-				//prelegenci
-				$("#example15").zAccordion({
-					tabWidth: "10%",
-					width: "100%",
-					height: "25%"
-				});
-				$("#prelegent1").click(function(){
-					//document.getElementById('logo_prelegent').src = "./img/carousel-item-3.jpg.jpg";
-					document.getElementById('logo_prelegent').innerHTML = '<img src="https://c.s-microsoft.com/en-us/CMSImages/lrn-share-site-ms-logo.png?version=bf62922f-fda3-d328-e220-b699eac0d6c0" alt="" width="100%" height="100%" />';
-					$(".change_text").empty();
-					$(".change_text").append("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et lorem sed arcu faucibus lobortis. Nam tellus eros, laoreet ut ultricies fringilla, faucibus sed risus. Morbi euismod vestibulum massa cursus fringilla. ")
-					$("#change_descibe").empty();
-					$("#change_descibe").append("Jestem Radko");
-				});
-				$("#prelegent2").click(function(){
-					document.getElementById('logo_prelegent').innerHTML = '<img src="http://warszawawpigulce.pl/wp-content/uploads/2015/03/dog-425067_12801.jpg" width="100%" height="100%" alt="" />';
-					$(".change_text").empty();
-					$(".change_text").append("Quisque gravida auctor dapibus. Pellentesque porttitor purus convallis neque posuere dapibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec tempus eu nibh id pellentesque.")
-					$("#change_descibe").empty();
-					$("#change_descibe").append("Jestem Rychu");
-				});
-				$("#prelegent3").click(function(){
-					document.getElementById('logo_prelegent').innerHTML = '<img src="https://c.s-microsoft.com/en-us/CMSImages/lrn-share-site-ms-logo.png?version=bf62922f-fda3-d328-e220-b699eac0d6c0" alt="" width="100%" height="100%" />';
-					$(".change_text").empty();
-					$(".change_text").append("Duis tincidunt eget dolor vel molestie. Praesent ac congue nunc, quis euismod dolor. Vivamus sed blandit nunc. Vivamus et risus eget ante lobortis ullamcorper.")
-					$("#change_descibe").empty();
-					$("#change_descibe").append("Marek Łowca");
-				}); 
-				$("#prelegent4").click(function(){
-					document.getElementById('logo_prelegent').innerHTML = '<img src="http://warszawawpigulce.pl/wp-content/uploads/2015/03/dog-425067_12801.jpg" width="100%" height="100%" alt="" />';
-					$(".change_text").empty();
-					$(".change_text").append("Morbi ut scelerisque arcu. Nulla fringilla faucibus efficitur. Mauris a accumsan diam. Sed in velit interdum, vulputate sapien ut, volutpat felis. Pellentesque molestie blandit tortor, nec tristique ligula aliquam sed.")
-					$("#change_descibe").empty();
-					$("#change_descibe").append("Zbyszek Bogdaniec");
-				});
-				$("#prelegent5").click(function(){
-					document.getElementById('logo_prelegent').innerHTML = '<img src="https://c.s-microsoft.com/en-us/CMSImages/lrn-share-site-ms-logo.png?version=bf62922f-fda3-d328-e220-b699eac0d6c0" alt="" width="100%" height="100%" />';
-					$(".change_text").empty();
-					$(".change_text").append("Nam vitae sollicitudin felis, vehicula tincidunt turpis. Proin feugiat placerat tempor. Nullam a cursus metus. Ut nec sagittis diam, in suscipit ante. Ut rhoncus pretium ante, auctor viverra lorem congue ac.")
-					$("#change_descibe").empty();
-					$("#change_descibe").append("Jola Jolanta");
-				});
-				$("#prelegent6").click(function(){
-					document.getElementById('logo_prelegent').innerHTML = '<img src="http://warszawawpigulce.pl/wp-content/uploads/2015/03/dog-425067_12801.jpg" width="100%" height="100%" alt="" />';
-					$(".change_text").empty();
-					$(".change_text").append("Cras at elit vel ipsum sagittis placerat. Morbi eget velit ac est ultricies sollicitudin in eu tellus. Donec et nibh eget ante tincidunt ultricies. Ut at sodales sem. ")
-					$("#change_descibe").empty();
-					$("#change_descibe").append("Eliza Baraniak");
-				});
-				$("#prelegent7").click(function(){
-					document.getElementById('logo_prelegent').innerHTML = '<img src="https://c.s-microsoft.com/en-us/CMSImages/lrn-share-site-ms-logo.png?version=bf62922f-fda3-d328-e220-b699eac0d6c0" alt="" width="100%" height="100%" />';
-					$(".change_text").empty();
-					$(".change_text").append("Nulla fringilla faucibus efficitur. Mauris a accumsan diam. Sed in velit interdum, vulputate sapien ut, volutpat felis. ")
-					$("#change_descibe").empty();
-					$("#change_descibe").append("Morela Jakoda");
-				});
-				$("#prelegent8").click(function(){
-					document.getElementById('logo_prelegent').innerHTML = '<img src="http://warszawawpigulce.pl/wp-content/uploads/2015/03/dog-425067_12801.jpg" width="100%" height="100%" alt="" />';
-					$(".change_text").empty();
-					$(".change_text").append("Mauris commodo lorem eros, sit amet vehicula augue lacinia a. Donec nec felis eget augue interdum vehicula. Duis tincidunt eget dolor vel molestie.")
-					$("#change_descibe").empty();
-					$("#change_descibe").append("Kasper Sraster");
-				});
-				//koniec prelegentow
-				$(window).resize(function() {
-					$("#example14").height($(window).height());
-					$("#example14 li").height($(window).height());
-					$("#example14 img").height($(window).height());
-				});
-		
-			$('.image').hover(function(){
-				$('.firm',this).slideDown(500);
-				$('.image').stop().animate(
-				{
-					width: "5%",
-				},
-				500,
-				'linear',
-				);
-				$(this).stop().animate(
-				{
-					width: "15%",
-				},
-				500,
-				'linear',
-				);
-			},
-			function(){
-				$('p',this).slideUp(500);
-				$('.image').stop().animate(
-				{
-					width: "10%",
-				},
-				500,
-				'linear',
-				);
-				$(this).stop().animate(
-				{
-					width: "10%",
-				},
-				500,
-				'linear',
-				function(){ 
-				});
-			
-		});
-		});
-	</script>
 
 </head>
+
 <body>
+	<div id="fullpage">
+		<div class="section active">
+			<ul>
+				<li><a href="#home">Strona główna</a></li>
+				<li><a href="#about">O wydarzeniu</a></li>
+				<li><a href="#partners">Partnerzy</a></li>
+				<li><a href="#partners">Prelegenci</a></li>
+				<li><a href="#contact">Kontakt</a></li>
+			</ul>
+		</div>
 
-<div id="fullpage">
-	<nav class="section">
-		<ul>
-			<li><a href="#section0">Home</a></li>
-			<li><a href="#section1">About</a></li>
-			<li><a href="#section2">2</a></li>	
-			<li><a href="#section3">Partnerzy</a><li>	
-			<li><a href="#section4">Partnerzy</a><li>		
-			<li><a href="#section map">Kontakt</a></li>
-			<li><a href="#section5">Kontakt</a></li>
-		</ul>
-	</nav>
-	
-	<div class="section active" id="section0">
-		
-	</div>
-	
-	<div class="section social" id="section1">
-		<i class="hover icon-facebook-official"></i>
-	    <i class="hover icon-twitter"></i>
-		<i class="hover icon-gplus"></i>
-		<i class="hover icon-mail-alt"></i>
-	</div>
-	<div class="section" id="section2">
-<div class="section-header"></div>
-<div class="host-wrapper">
-<div class="left-column"><img id="photo" src="http://crossweb.pl/upload/gallery/cycles/1278/300x300/put.net_.png"/></div>
-<div class="right-column"><p>Grupa pasjonatów IT oraz technologii .NET.
-	 Prywatnie prowadzimy bary, prowadzimy konferencje, wygrywamy hackatony, tworzymy niesamowite programy i wyznaczamy trendy. </p></div>
-	 <div class="hidden-div ">
-		 
-		 <img class="img-circle" src="https://www.politiplatform.com/img/politicians/donald_trump/avatar.jpg">
-		 <img class="img-circle" src="https://www.politiplatform.com/img/politicians/donald_trump/avatar.jpg">
-		 <img class="img-circle" src="https://www.politiplatform.com/img/politicians/donald_trump/avatar.jpg">
-		 <img class="img-circle" src="https://www.politiplatform.com/img/politicians/donald_trump/avatar.jpg">
-		
-		 
-		 </div>
-</div>
+		<div class="section" id="home">
+			<div class="overlay">
 
-	</div>
-	<div class="section section3,5" id="section3,5">
+			</div>
+		</div>
+
+		<div class="section" id="about">
+
+			<div class="white-stripe shadow">
+				<p>Grupa pasjonatów IT oraz technologii .NET. Prywatnie prowadzimy bary, prowadzimy konferencje, wygrywamy hackatony, tworzymy
+					niesamowite programy i wyznaczamy trendy. </p>
+				<img src="img/cropped-putnet.png" alt="" width="50">
+			</div>
+
+			<!--<div class="hidden-div ">
+					<img class="img-circle" src="https://www.politiplatform.com/img/politicians/donald_trump/avatar.jpg">
+					<img class="img-circle" src="https://www.politiplatform.com/img/politicians/donald_trump/avatar.jpg">
+					<img class="img-circle" src="https://www.politiplatform.com/img/politicians/donald_trump/avatar.jpg">
+					<img class="img-circle" src="https://www.politiplatform.com/img/politicians/donald_trump/avatar.jpg">
+				</div>-->
+		</div>
+
+		<div class="section" id="partners">
+		</div>
+
+		<div class="section section3,5" id="section3,5">
 			<ul id="example14">
-				<li><img src="http://gfx.antyradio.pl/var/antyradio/storage/images/muzyka/duperele/badania-potwierdzily-jaka-muzyke-najbardziej-lubia-psy-12959/969510-1-pol-PL/Badania-potwierdzily-jaka-muzyke-najbardziej-lubia-psy_article.jpg" width="100%" height="100%" alt="" /></li>
-				<li><img src="https://vignette2.wikia.nocookie.net/psy-i-szczeniaki/images/0/0f/Psy13.jpg/revision/latest?cb=20130512153137&path-prefix=pl" width="100%" height="100%" alt="" /></li>
-				<li><img src="http://warszawawpigulce.pl/wp-content/uploads/2015/03/dog-425067_12801.jpg" width="100%" height="100%" alt="" /></li>
-				<li><img src="http://warszawawpigulce.pl/wp-content/uploads/2015/03/dog-425067_12801.jpg" width="100%" height="100%" alt="" /></li>
-				<li><img src="http://warszawawpigulce.pl/wp-content/uploads/2015/03/dog-425067_12801.jpg" width="100%" height="100%" alt="" /></li>
+				<li><img src="http://gfx.antyradio.pl/var/antyradio/storage/images/muzyka/duperele/badania-potwierdzily-jaka-muzyke-najbardziej-lubia-psy-12959/969510-1-pol-PL/Badania-potwierdzily-jaka-muzyke-najbardziej-lubia-psy_article.jpg"
+						width="100%" height="100%" alt="" /></li>
+				<li><img src="https://vignette2.wikia.nocookie.net/psy-i-szczeniaki/images/0/0f/Psy13.jpg/revision/latest?cb=20130512153137&path-prefix=pl"
+						width="100%" height="100%" alt="" /></li>
+				<li><img src="http://warszawawpigulce.pl/wp-content/uploads/2015/03/dog-425067_12801.jpg" width="100%" height="100%" alt=""
+					/></li>
+				<li><img src="http://warszawawpigulce.pl/wp-content/uploads/2015/03/dog-425067_12801.jpg" width="100%" height="100%" alt=""
+					/></li>
+				<li><img src="http://warszawawpigulce.pl/wp-content/uploads/2015/03/dog-425067_12801.jpg" width="100%" height="100%" alt=""
+					/></li>
 			</ul>
 
 
-	</div>
-	<div class="section section3 Itad2016" id="section3">
-		
-<section>
-	<p class="header_itad2016">Itad 2016 !</p>
-	<div class="section_itad2016">
-		<h1>Siema</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pretium felis vel sem tempor lobortis. Vestibulum eget magna odio. Nulla ut sem sit amet sapien sollicitudin posuere. Nunc at ullamcorper lorem. Ut lacinia faucibus odio, quis mollis diam laoreet non. Cras in purus quis quam semper accumsan.</p>
-		<!--<ul class="lista_itad2016">
+		</div>
+		<div class="section section3 Itad2016" id="section3">
+
+			<section>
+				<p class="header_itad2016">Itad 2016 !</p>
+				<div class="section_itad2016">
+					<h1>Siema</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pretium felis vel sem tempor lobortis. Vestibulum eget
+						magna odio. Nulla ut sem sit amet sapien sollicitudin posuere. Nunc at ullamcorper lorem. Ut lacinia faucibus odio,
+						quis mollis diam laoreet non. Cras in purus quis quam semper accumsan.</p>
+					<!--<ul class="lista_itad2016">
 			<li>Jurek Owsiak</li>
 			<li>Wina Tuska</li>
 			<li>Jasne że Tusk</li>
@@ -277,147 +121,165 @@
 			<li>Jasne że Tusk</li>
 			<li>Justin Bieber</li>
 		</ul>-->
-		<!--Opis prelegentów zmieniany autmatico -->
-		<h2>PRELEGENCI 2016</h2>
-		<div class="preleg-descibe">
-			<p id="change_descibe">Jestem Radko</p>
-			<p class="change_text">tutaj planuje zrobić zmieniających sie prelegentów którzy Byli, może zdjęcie i opis, 
-			Nie wiem jeszcze gdzie ten filmik z zeszłego roku.</p>
-		</div>
-		<div id="logo_prelegent"><img src="./logo/logo-2.jpg" alt="" style="width: 100%; height: 100%;" /></div>
-		<ul id="example15">
-				<li id="prelegent1"><img src="http://gfx.antyradio.pl/var/antyradio/storage/images/muzyka/duperele/badania-potwierdzily-jaka-muzyke-najbardziej-lubia-psy-12959/969510-1-pol-PL/Badania-potwierdzily-jaka-muzyke-najbardziej-lubia-psy_article.jpg" width="100%" height="100%" alt="" /></li>
-				<li id="prelegent2"><img src="https://vignette2.wikia.nocookie.net/psy-i-szczeniaki/images/0/0f/Psy13.jpg/revision/latest?cb=20130512153137&path-prefix=pl" width="100%" height="100%" alt="" /></li>
-				
-				
-		</ul>
-	</div>
-	<div class="slide-wrap" id="slide-wrap-add">
+					<!--Opis prelegentów zmieniany autmatico -->
+					<h2>PRELEGENCI 2016</h2>
+					<div class="preleg-descibe">
+						<p id="change_descibe">Jestem Radko</p>
+						<p class="change_text">tutaj planuje zrobić zmieniających sie prelegentów którzy Byli, może zdjęcie i opis, Nie wiem jeszcze gdzie ten filmik
+							z zeszłego roku.</p>
+					</div>
+					<div id="logo_prelegent"><img src="./logo/logo-2.jpg" alt="" style="width: 100%; height: 100%;" /></div>
+					<ul id="example15">
+						<li id="prelegent1"><img src="http://gfx.antyradio.pl/var/antyradio/storage/images/muzyka/duperele/badania-potwierdzily-jaka-muzyke-najbardziej-lubia-psy-12959/969510-1-pol-PL/Badania-potwierdzily-jaka-muzyke-najbardziej-lubia-psy_article.jpg"
+								width="100%" height="100%" alt="" /></li>
+						<li id="prelegent2"><img src="https://vignette2.wikia.nocookie.net/psy-i-szczeniaki/images/0/0f/Psy13.jpg/revision/latest?cb=20130512153137&path-prefix=pl"
+								width="100%" height="100%" alt="" /></li>
 
-	</div><!-- SLIDER - KONIEC -->
-</section>
 
-</div>
-	<div class="section section3" id="section3">
-		<p id = "partner" >Partnerzy wydarzenia</p>
-		<div class="section-image" margin-top="10%">
-			<div class="image">
-				<a href="https://www.onet.pl">
-					<img src="./logo/logo-2.jpg" alt="siema">
-					<p class="firm">Siemens</p>
-				</a>
-			</div>
-			<div class="image">
-				<a href="https://www.onet.pl">
-					<img src="./logo/logo-2.jpg" alt="siema">
-					<p class="firm">Siemens</p>
-				</a>
-			</div>
-			<div class="image">
-				<a href="https://www.onet.pl">
-					<img src="./logo/logo-2.jpg" alt="siema">
-					<p class="firm">Siemens</p>
-				</a>
-			</div>
-			<div class="image">
-				<a href="https://www.onet.pl">
-					<img src="./logo/logo-2.jpg" alt="siema">
-					<p class="firm">Siemens</p>
-				</a>
-			</div>
-			<div class="image">
-				<a href="https://www.onet.pl">
-				<img src="./logo/logo-2.jpg" alt="siema">
-				<p class="firm">Siemens</p>
-				</a>
-			</div>
-			<div class="image">
-				<a href="https://www.onet.pl">
-				<img src="./logo/logo-2.jpg" alt="siema">
-				<p class="firm">Siemens</p>
-				</a>
-			</div>		
-		</div>
-			<div class="section-image">
-			<div class="image">
-				<a href="https://www.onet.pl">
-					<img src="./logo/logo-2.jpg" alt="siema">
-					<p class="firm">Siemens</p>
-				</a>
-			</div>
-			<div class="image">
-				<a href="https://www.onet.pl">
-					<img src="./logo/logo-2.jpg" alt="siema">
-					<p class="firm">Siemens</p>
-				</a>
-			</div>
-			<div class="image">
-				<a href="https://www.onet.pl">
-					<img src="./logo/logo-2.jpg" alt="siema">
-					<p class="firm">Siemens</p>
-				</a>
-			</div>
-			<div class="image">
-				<a href="https://www.onet.pl">
-				<img src="./logo/logo-2.jpg" alt="siema">
-				<p class="firm">Siemens</p>
-				</a>
-			</div>
-			<div class="image">
-				<a href="https://www.onet.pl">
-				<img src="./logo/logo-2.jpg" alt="siema">
-				<p class="firm">Siemens</p>
-				</a>
-			</div>		
-		</div>
-		<p id="media-patron">Partnerzy medialni / Patroni wydarzenia</p>
-		<div class="section-image">	
-			<div class="image">
-				<a href="https://www.onet.pl">
-				<img src="./logo/logo-2.jpg" alt="siema">
-				<p class="firm">Siemens</p>
-				</a>
-			</div>
-			<div class="image">
-				<a href="https://www.onet.pl">
-				<img src="./logo/logo-2.jpg" alt="siema">
-				<p class="firm">Siemens</p>
-				</a>
-			</div>
-			<div class="image">
-				<a href="https://www.onet.pl">
-				<img src="./logo/logo-2.jpg" alt="siema">
-				<p class="firm">Siemens</p>
-				</a>
-			</div>
-			<div class="image">
-				<a href="https://www.onet.pl">
-				<img src="./logo/logo-2.jpg" alt="siema">
-				<p class="firm">Siemens</p>
-				</a>
-			</div>
-		</div>
-	</div>
-	
-	<div class="section map">
-		<section>
-			<p class="header_contact">Kontakt</p>
-		
-			<div class="kontakt">
-				<ul>
-				<li>Poznań</li>
-				<li>Piotrowo 2</li>
-				<li>CW4</li>
-				<li><a href="https://goo.gl/maps/RpwWXo5b48K2" target="_blank">Sprawdź dojazd</a></li>
-				</ul>
+					</ul>
 				</div>
-			<div class="mapa" id="map">Mapka</div>
+				<div class="slide-wrap" id="slide-wrap-add">
+
+				</div>
+				<!-- SLIDER - KONIEC -->
 			</section>
-	
+
+		</div>
+		<div class="section section3" id="section3">
+			<p id="partner">Partnerzy wydarzenia</p>
+			<div class="section-image" margin-top="10%">
+				<div class="image">
+					<a href="https://www.onet.pl">
+						<img src="./logo/logo-2.jpg" alt="siema">
+						<p class="firm">Siemens</p>
+					</a>
+				</div>
+				<div class="image">
+					<a href="https://www.onet.pl">
+						<img src="./logo/logo-2.jpg" alt="siema">
+						<p class="firm">Siemens</p>
+					</a>
+				</div>
+				<div class="image">
+					<a href="https://www.onet.pl">
+						<img src="./logo/logo-2.jpg" alt="siema">
+						<p class="firm">Siemens</p>
+					</a>
+				</div>
+				<div class="image">
+					<a href="https://www.onet.pl">
+						<img src="./logo/logo-2.jpg" alt="siema">
+						<p class="firm">Siemens</p>
+					</a>
+				</div>
+				<div class="image">
+					<a href="https://www.onet.pl">
+						<img src="./logo/logo-2.jpg" alt="siema">
+						<p class="firm">Siemens</p>
+					</a>
+				</div>
+				<div class="image">
+					<a href="https://www.onet.pl">
+						<img src="./logo/logo-2.jpg" alt="siema">
+						<p class="firm">Siemens</p>
+					</a>
+				</div>
+			</div>
+			<div class="section-image">
+				<div class="image">
+					<a href="https://www.onet.pl">
+						<img src="./logo/logo-2.jpg" alt="siema">
+						<p class="firm">Siemens</p>
+					</a>
+				</div>
+				<div class="image">
+					<a href="https://www.onet.pl">
+						<img src="./logo/logo-2.jpg" alt="siema">
+						<p class="firm">Siemens</p>
+					</a>
+				</div>
+				<div class="image">
+					<a href="https://www.onet.pl">
+						<img src="./logo/logo-2.jpg" alt="siema">
+						<p class="firm">Siemens</p>
+					</a>
+				</div>
+				<div class="image">
+					<a href="https://www.onet.pl">
+						<img src="./logo/logo-2.jpg" alt="siema">
+						<p class="firm">Siemens</p>
+					</a>
+				</div>
+				<div class="image">
+					<a href="https://www.onet.pl">
+						<img src="./logo/logo-2.jpg" alt="siema">
+						<p class="firm">Siemens</p>
+					</a>
+				</div>
+			</div>
+			<p id="media-patron">Partnerzy medialni / Patroni wydarzenia</p>
+			<div class="section-image">
+				<div class="image">
+					<a href="https://www.onet.pl">
+						<img src="./logo/logo-2.jpg" alt="siema">
+						<p class="firm">Siemens</p>
+					</a>
+				</div>
+				<div class="image">
+					<a href="https://www.onet.pl">
+						<img src="./logo/logo-2.jpg" alt="siema">
+						<p class="firm">Siemens</p>
+					</a>
+				</div>
+				<div class="image">
+					<a href="https://www.onet.pl">
+						<img src="./logo/logo-2.jpg" alt="siema">
+						<p class="firm">Siemens</p>
+					</a>
+				</div>
+				<div class="image">
+					<a href="https://www.onet.pl">
+						<img src="./logo/logo-2.jpg" alt="siema">
+						<p class="firm">Siemens</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="section" id="contact">
+			<div class="contact-container">
+				<div class="adress-container">
+					<h2>KONTAKT</h2>
+					<span class="adress">
+						<p>Poznań</p>
+						<p>Piotrowo 2</p>
+						<p>Centrum Wykładowe Politechniki Poznańskiej</p>
+						<p>Sala nr 4</p>
+						<p><a href="https://goo.gl/maps/RpwWXo5b48K2" target="_blank">Sprawdź dojazd</a></p>
+					</span>
+				</div>
+
+				<div id="map"></div>
+			</div>
+
+		</div>
+
+		<div class="section social" id="contact">
+			<!--<h2>Odezwij się do nas!</h2>-->
+			<div class="flex-div">
+				<i class="hover icon-facebook-official"></i>
+				<i class="hover icon-twitter"></i>
+				<i class="hover icon-gplus"></i>
+				<i class="hover icon-mail-alt"></i>
+			</div>
+		</div>
 	</div>
-	
-</div>
 
-
+	<script>
+		$('#fullpage').fullpage({
+			css3:false
+		});
+	</script>
 </body>
+
 </html>
