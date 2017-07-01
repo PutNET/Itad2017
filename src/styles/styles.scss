@@ -1,7 +1,9 @@
 // .fp-tableCell{
 //    // background-color: red;
 // }
-
+body {
+    font-family: 'Lato', sans-serif; 
+}
 .shadow{
     -webkit-box-shadow: 3px 3px 10px 0px black;
     -moz-box-shadow: 3px 3px 10px 0px black;
@@ -36,26 +38,20 @@
 
 #partner{
     font-size: 60px;
-    padding: 50px;
+    padding: 20px;
 }
 #media-patron{
      font-size: 40px;
     padding: 50px;
    
 }
-.firm {
-    font-size: 20px;
-    margin: 4px;
-    display: none;
-}
 .slide-wrap {
      margin-right: 5%;
      width:46%; 
      padding: 0 2%;
-
      height:60vh;
      min-height: 400px;
-     border: 1px solid black;
+     //border: 1px solid black;
      }
  .slide-container {
     width:100% !important;
@@ -73,12 +69,19 @@
     text-align:center;
 }
 
-.menu a {color:transparent; display:inline-block; width:1em; height:1em; border:none; border-radius:100%; background:#8190D6; margin:auto 5px;}
+.menu a {
+    color:transparent; 
+    display:inline-block;
+     width:1em; 
+     height:1em; 
+     border:none; 
+     border-radius:100%; 
+     background:#8190D6; 
+     margin:auto 5px;}
 
 .menu a.activeSlide {
     border:3px solid #444444;
 } 
-
 .Itad2016{
     background: #aaaaaa !important; 
 
@@ -188,7 +191,7 @@ div.hover  {
     width: 5px;
 }
 div.hover:hover div.appear {
-    display:block;
+    //display:block;
 }
 
 .social{
@@ -365,12 +368,16 @@ div.hover:hover div.appear {
 }
 
 .contact-container{
+    padding:3%;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+.adress-container{
+    margin-left:10%;
 }
 
 #map{
@@ -384,7 +391,10 @@ div.hover:hover div.appear {
 .headerItad {
   display: flex;
   background-color: black;
-  width: 100%; }
+  width: 100%;
+  p{
+      margin-bottom:0;
+  } }
  
 .title {
   margin: 2% 0 2% 0;
@@ -407,10 +417,12 @@ div.hover:hover div.appear {
     margin-right: 6%;
     width: 100%;
     display: flex;
+    margin-bottom:0;
     justify-content: space-around; }
     .navigation ul p {
       font-family: 'Lato', sans-serif;
       font-size: 1.6rem;
+      margin-bottom:0;
       }
       .navigation ul p a {
         position: relative;
@@ -532,3 +544,45 @@ div.hover:hover div.appear {
         display:flex;
 
     }
+
+.countdown{
+  width: 100%;
+}
+.countdown h1{
+  margin-top:0;
+  font-size: 2vw;
+}
+#clock{
+  display: flex;
+  justify-content: center;
+}
+#clock span{
+  margin:0%;
+  float: left;
+  text-align: center;
+  font-size: 3vw;
+  width: 15%;
+  color: black;}
+#clock:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+#units{
+  display: flex;
+  justify-content: center;
+}
+#units span{
+  margin:0;
+  float: left;
+  width: 15%;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.1vw;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);}
+ 
+span.turn{
+  animation: turn 0.7s ease forwards;
+}
