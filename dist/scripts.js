@@ -65,6 +65,8 @@
 
 $('.firm').slideUp();
 $(document).ready(function () {
+
+
     
     	for(var i = 1; i<22; i++){
 		document.getElementById('slide-wrap-add').innerHTML += '<div class="slide-container group"><img src="./ITAD16/zd ('+i+').jpg"  alt="" /></div>'
