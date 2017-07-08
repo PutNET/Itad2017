@@ -63,7 +63,7 @@
 //     });
 // });
 
-$('.firm').slideUp();
+//$('.firm').fadeOut();
 $(document).ready(function () {
 
 
@@ -129,8 +129,6 @@ function startTimer(id, deadline){
       clearInterval(timerInterval);
       clock.innerHTML = '<span>0</span><span>0</span><span>0</span><span>0</span>';
     }
- 
- 
   }, 1000);
 }
  
@@ -166,7 +164,8 @@ $('.slide-wrap')
 				});
 
     $('.image').hover(function () {
-        $('.firm', this).slideDown(500);
+        $('.firm', this).css('visibility', 'visible');
+        $('.firm', this).stop().slideDown(500);
         $('.image').stop().animate(
             {
                 width: "5%",
@@ -183,7 +182,7 @@ $('.slide-wrap')
         );
     },
         function () {
-            $('p', this).slideUp(500);
+            $('p', this).stop().slideUp(500);
             $('.image').stop().animate(
                 {
                     width: "10%",
