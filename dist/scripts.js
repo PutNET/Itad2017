@@ -66,7 +66,14 @@
 //$('.firm').fadeOut();
 $(document).ready(function () {
 
+$(".arrow").click(function(){
+    $(".white-stripe").remove();
+    $(".hidden-div").css('display', 'block');
+});
 
+$(".arrow").hover(function(){
+	$(this).css("cursor", "pointer");
+});
     
     	for(var i = 1; i<22; i++){
 		document.getElementById('slide-wrap-add').innerHTML += '<div class="slide-container group"><img src="./ITAD16/zd ('+i+').jpg"  alt="" /></div>'
