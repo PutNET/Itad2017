@@ -74,7 +74,7 @@ body {
   border: 3px solid #444444; }
 
 .Itad2016 {
-  background: #aaaaaa !important; }
+  background: #dadada !important; }
 
 .left-column {
   width: 30%;
@@ -551,4 +551,5 @@ span.turn {
   top: 0px; }
 
 .firm {
-  visibility: hidden; }
+  visibility: hidden;
+  color: black; }
