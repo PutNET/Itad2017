@@ -298,6 +298,8 @@ div.hover {
   margin-left: 6%; }
   .adress-container p {
     font-size: 150%; }
+    .adress-container p a {
+      font-size: 100% !important; }
 
 #map {
   margin-top: 5%;
