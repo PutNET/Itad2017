@@ -273,4 +273,6 @@ $('.slide-wrap')
 					$("#change_descibe").append("Kasper Sraster");
 				});
 				//koniec prelegentow
+                //agenda
+                
 });

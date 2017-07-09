@@ -28,7 +28,9 @@
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
-    
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 
 	<link rel="stylesheet" type="text/css" href="dist/jquery.fullPage.min.css" />
     <link rel="stylesheet" type="text/css" href="vendors/css/examples.css" />
@@ -46,6 +48,10 @@
     <script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
     <script type="text/javascript" src="dist/jquery.fullPage.min.js"></script>
     <script type="text/javascript" src="dist/scripts.js"></script>
+
+	<script src="js/jquery.mobile.custom.min.js"></script>
+ 	<script src="js/main.js"></script> <!--Resource jQuery -->
+
     <script src="dist/map.js"></script>
     <script src="slider/zAccordion/js/jquery.zaccordion.js"></script>
 
@@ -166,6 +172,104 @@
 		</div>
 
 		<div class="section" id="agenda">
+			<section class="cd-horizontal-timeline">
+	<div class="timeline">
+		<div class="events-wrapper">
+			<div class="events">
+				<ol>
+					<li><a href="#0" data-date="17/01/2014" class="selected">16:00</a></li>
+					<li><a href="#0" data-date="18/01/2014">17:00</a></li>
+					<li><a href="#0" data-date="19/01/2014">18:00</a></li>
+					<li><a href="#0" data-date="20/01/2014">19:00</a></li>
+					<li><a href="#0" data-date="21/01/2014">20:00</a></li>
+					<li><a href="#0" data-date="22/01/2014">21:00</a></li>
+					<li><a href="#0" data-date="23/01/2014">22:00</a></li>
+					<li><a href="#0" data-date="24/01/2014">23:00</a></li>
+				</ol>
+
+				<span class="filling-line" aria-hidden="true"></span>
+			</div> <!-- .events -->
+		</div> <!-- .events-wrapper -->
+			
+		<ul class="cd-timeline-navigation">
+			<li><a href="#0" class="prev inactive">Prev</a></li>
+			<li><a href="#0" class="next">Next</a></li>
+		</ul> <!-- .cd-timeline-navigation -->
+	</div> <!-- .timeline -->
+
+	<div class="events-content">
+		<ol>
+			<li class="selected" data-date="17/01/2014">
+				<h2>Horizontal Timeline</h2>
+				<em>16:00</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="18/01/2014">
+				<h2>Event title here</h2>
+				<em>17:00</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="19/01/2014">
+				<h2>Event title here</h2>
+				<em>18:00</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="20/01/2014">
+				<h2>Event title here</h2>
+				<em>19:00</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="21/01/2014">
+				<h2>Event title here</h2>
+				<em>20:00</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="22/01/2014">
+				<h2>Event title here</h2>
+				<em>21:00</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="23/01/2014">
+				<h2>Event title here</h2>
+				<em>22:00</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+			<li data-date="24/01/2014">
+				<h2>Event title here</h2>
+				<em>23:00</em>
+				<p>	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				</p>
+			</li>
+
+		
+		</ol>
+	</div> <!-- .events-content -->
+</section>
+	
+
+
 		</div>
 
 		<div class="section" id="about">
