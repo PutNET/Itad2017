@@ -27,7 +27,8 @@ body {
 
 #partner {
   font-size: 60px;
-  padding: 20px; }
+  padding: 20px;
+  padding-top: 5%; }
 
 #media-patron {
   font-size: 40px;
@@ -208,7 +209,8 @@ div.hover {
 
 .header_itad2016 {
   font-size: 50px;
-  padding: 2%; }
+  padding: 2%;
+  padding-top: 5%; }
 
 .header_contact {
   margin-bottom: 100px; }
