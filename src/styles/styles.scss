@@ -2,7 +2,8 @@
 //    // background-color: red;
 // }
 body {
-    font-family: 'Lato', sans-serif; 
+    width:100%;
+    height:100%;
 }
 .shadow{
     -webkit-box-shadow: 3px 3px 10px 0px black;
@@ -399,55 +400,74 @@ div.hover:hover div.appear {
 }
 
 .mainPage .fp-tableCell {
-  vertical-align: top; }
- 
-.headerItad {
+  margin:0 !important;
+  vertical-align: top;
+  background-image: url(http://www.egg-tooth.com/wp-content/uploads/2014/01/clean-white-polygon-backgrounds-9.jpg);
+  background-size: cover;
+  background-repeat:  no-repeat;
+  background-position: center center;   
+ }
+ .helper12{  
+  margin:0 !important;
+  position: fixed;
+  top: 0;
+  z-index: 70;
+  width:100%;
+  }
+ .headerItad {
   display: flex;
   background-color: black;
   width: 100%;
   p{
       margin-bottom:0;
-  } }
- 
+  }
+}
 .title {
   margin: 2% 0 2% 0;
   color: white;
-  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
        .letter{
-          color:red;
-         
-      }
+          color:#f44336;  
+        }
+        p{
+            font-size: 150%;
+        }
+        i{
+            margin-right: 3%; 
+        }
 }
-  .title p i {
-    margin-right: 3%;
-    }
      
 .navigation {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+}
   .navigation ul {
     margin-right: 6%;
     width: 100%;
     display: flex;
     margin-bottom:0;
-    justify-content: space-around; }
+    justify-content: space-around; 
+    }
     .navigation ul p {
-      font-family: 'Lato', sans-serif;
-      font-size: 1.6rem;
+      text-transform: uppercase;
+      font-size: 1.1vw;
+      letter-spacing: 1px;
       margin-bottom:0;
       }
       .navigation ul p a {
         position: relative;
         color: #fff;
-        text-decoration: none; }
+        text-decoration: none; 
+        }
       .navigation ul p a:hover {
-        color: #fff; }
+        color: #fff; 
+        }
       .navigation ul p a:before {
         content: "";
         position: absolute;
         width: 100%;
-        height: 2px;
+        height: 1.5px;
         bottom: -40%;
         left: 0;
         background-color: #fff;
@@ -463,7 +483,7 @@ div.hover:hover div.appear {
         //logo
         .mainWrapper{
            box-sizing: border-box;
-           padding:3% 0 0 10%;
+           padding:10% 0 0 10%;
         }
         .square.large.logo{
             width:12vw;
@@ -575,7 +595,9 @@ div.hover:hover div.appear {
   text-align: center;
   font-size: 3vw;
   width: 15%;
-  color: black;}
+  color: black;
+  text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+  }
 #clock:after{
   content: "";
   display: block;
@@ -594,7 +616,8 @@ div.hover:hover div.appear {
   text-transform: uppercase;
   font-size: 1.1vw;
   letter-spacing: 2px;
-  text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);}
+  text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+  }
  
 span.turn{
   animation: turn 0.7s ease forwards;
