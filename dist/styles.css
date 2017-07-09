@@ -573,7 +573,12 @@ span.turn {
 .arrow {
   text-align: right;
   font-size: 54px;
-  position: relative; }
+  position: relative;
+  transition: all .3s ease; }
+
+.arrow:hover {
+  font-size: 4.2em;
+  color: #1eff2d; }
 
 .ch-grid {
   margin: 20px 0 0 0;
@@ -600,7 +605,13 @@ span.turn {
 .leftarrow {
   float: left;
   text-align: right;
-  font-size: 54px; }
+  font-size: 54px;
+  transition: all .3s ease; }
+
+.leftarrow:hover {
+  font-size: 4.2em;
+  color: #1eff2d;
+  cursor: pointer; }
 
 .leftarrow::after {
   clear: both; }

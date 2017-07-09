@@ -711,11 +711,15 @@ top: 0px;
 }
 /// Koniec Damiana CSS ///
 
-.arrow{
-    text-align: right;
-    font-size: 54px;
-    position: relative;
-}
+.arrow {
+  text-align: right;
+  font-size: 54px;
+  position: relative;
+  transition: all .3s ease; }
+
+  .arrow:hover {
+  font-size: 4.2em;
+  color: #1eff2d; }
 
 
 .ch-grid {
@@ -744,11 +748,17 @@ top: 0px;
 	margin: 20px;
 }
 
-.leftarrow{
-    float: left;
-    text-align: right;
-    font-size: 54px;
-}
+.leftarrow {
+  float: left;
+  text-align: right;
+  font-size: 54px;
+  transition: all .3s ease; }
+  
+  .leftarrow:hover {
+  font-size: 4.2em;
+  color: #1eff2d;
+  cursor: pointer; }
+
 .leftarrow::after{
     clear: both;
 }
