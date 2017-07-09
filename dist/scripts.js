@@ -191,7 +191,7 @@ $('.slide-wrap')
         );
     },
         function () {
-            $('p', this).stop().slideUp(500);
+            $('.firm', this).stop().slideUp(500);
             $('.image').stop().animate(
                 {
                     width: "10%",
