@@ -406,3 +406,6 @@ Main Components
     transform: translateX(0%);
   }
 }
+.prev next{
+  opacity: 0;
+}
