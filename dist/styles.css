@@ -584,12 +584,22 @@ span.turn {
 .arrow {
   text-align: right;
   font-size: 54px;
-  position: relative;
+  position: absolute;
+  bottom: 10px;
+  color: #424242;
   transition: all .3s ease; }
 
 .arrow:hover {
   font-size: 4.2em;
-  color: #1eff2d; }
+  color: #BDBDBD; }
+
+.infoagroup {
+  position: absolute;
+  top: 10px; }
+
+.groupphoto {
+  position: absolute;
+  top: 80px; }
 
 .ch-grid {
   margin: 20px 0 0 0;
@@ -617,12 +627,14 @@ span.turn {
   float: left;
   text-align: right;
   font-size: 54px;
-  transition: all .3s ease; }
+  color: #424242; }
 
 .leftarrow:hover {
-  font-size: 4.2em;
-  color: #1eff2d;
+  color: #BDBDBD;
   cursor: pointer; }
 
 .leftarrow::after {
   clear: both; }
+
+.flex-div a, .white-stripe a {
+  font-size: 100%; }
