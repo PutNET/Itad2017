@@ -221,7 +221,10 @@ $('.slide-wrap')
 					$(".change_text").empty();
 					$(".change_text").append("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et lorem sed arcu faucibus lobortis. Nam tellus eros, laoreet ut ultricies fringilla, faucibus sed risus. Morbi euismod vestibulum massa cursus fringilla. ")
 					$("#change_descibe").empty();
-					$("#change_descibe").append("Jestem Radko");
+					$("#change_descibe").append("");
+                    $("#Opis").empty();
+                    $("#Opis").append("ITAD 2016");
+                    
 				});
 				$("#prelegent2").click(function(){
 					document.getElementById('logo_prelegent').innerHTML = '<img src="http://warszawawpigulce.pl/wp-content/uploads/2015/03/dog-425067_12801.jpg" width="100%" height="100%" alt="" />';
@@ -229,6 +232,8 @@ $('.slide-wrap')
 					$(".change_text").append("Quisque gravida auctor dapibus. Pellentesque porttitor purus convallis neque posuere dapibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec tempus eu nibh id pellentesque.")
 					$("#change_descibe").empty();
 					$("#change_descibe").append("Jestem Rychu");
+                    $("#Opis").empty();
+                    $("#Opis").append("PRELEGENT");
 				});
 				$("#prelegent3").click(function(){
 					document.getElementById('logo_prelegent').innerHTML = '<img src="https://c.s-microsoft.com/en-us/CMSImages/lrn-share-site-ms-logo.png?version=bf62922f-fda3-d328-e220-b699eac0d6c0" alt="" width="100%" height="100%" />';
@@ -236,6 +241,8 @@ $('.slide-wrap')
 					$(".change_text").append("Duis tincidunt eget dolor vel molestie. Praesent ac congue nunc, quis euismod dolor. Vivamus sed blandit nunc. Vivamus et risus eget ante lobortis ullamcorper.")
 					$("#change_descibe").empty();
 					$("#change_descibe").append("Marek Łowca");
+                     $("#Opis").empty();
+                    $("#Opis").append("PRELEGENT");
 				}); 
 				$("#prelegent4").click(function(){
 					document.getElementById('logo_prelegent').innerHTML = '<img src="http://warszawawpigulce.pl/wp-content/uploads/2015/03/dog-425067_12801.jpg" width="100%" height="100%" alt="" />';
@@ -243,6 +250,8 @@ $('.slide-wrap')
 					$(".change_text").append("Morbi ut scelerisque arcu. Nulla fringilla faucibus efficitur. Mauris a accumsan diam. Sed in velit interdum, vulputate sapien ut, volutpat felis. Pellentesque molestie blandit tortor, nec tristique ligula aliquam sed.")
 					$("#change_descibe").empty();
 					$("#change_descibe").append("Zbyszek Bogdaniec");
+                     $("#Opis").empty();
+                    $("#Opis").append("PRELEGENT");
 				});
 				$("#prelegent5").click(function(){
 					document.getElementById('logo_prelegent').innerHTML = '<img src="https://c.s-microsoft.com/en-us/CMSImages/lrn-share-site-ms-logo.png?version=bf62922f-fda3-d328-e220-b699eac0d6c0" alt="" width="100%" height="100%" />';
@@ -250,6 +259,8 @@ $('.slide-wrap')
 					$(".change_text").append("Nam vitae sollicitudin felis, vehicula tincidunt turpis. Proin feugiat placerat tempor. Nullam a cursus metus. Ut nec sagittis diam, in suscipit ante. Ut rhoncus pretium ante, auctor viverra lorem congue ac.")
 					$("#change_descibe").empty();
 					$("#change_descibe").append("Jola Jolanta");
+                     $("#Opis").empty();
+                    $("#Opis").append("PRELEGENT");
 				});
 				$("#prelegent6").click(function(){
 					document.getElementById('logo_prelegent').innerHTML = '<img src="http://warszawawpigulce.pl/wp-content/uploads/2015/03/dog-425067_12801.jpg" width="100%" height="100%" alt="" />';
@@ -257,6 +268,8 @@ $('.slide-wrap')
 					$(".change_text").append("Cras at elit vel ipsum sagittis placerat. Morbi eget velit ac est ultricies sollicitudin in eu tellus. Donec et nibh eget ante tincidunt ultricies. Ut at sodales sem. ")
 					$("#change_descibe").empty();
 					$("#change_descibe").append("Eliza Baraniak");
+                     $("#Opis").empty();
+                    $("#Opis").append("PRELEGENT");
 				});
 				$("#prelegent7").click(function(){
 					document.getElementById('logo_prelegent').innerHTML = '<img src="https://c.s-microsoft.com/en-us/CMSImages/lrn-share-site-ms-logo.png?version=bf62922f-fda3-d328-e220-b699eac0d6c0" alt="" width="100%" height="100%" />';
@@ -264,6 +277,8 @@ $('.slide-wrap')
 					$(".change_text").append("Nulla fringilla faucibus efficitur. Mauris a accumsan diam. Sed in velit interdum, vulputate sapien ut, volutpat felis. ")
 					$("#change_descibe").empty();
 					$("#change_descibe").append("Morela Jakoda");
+                     $("#Opis").empty();
+                    $("#Opis").append("PRELEGENT");
 				});
 				$("#prelegent8").click(function(){
 					document.getElementById('logo_prelegent').innerHTML = '<img src="http://warszawawpigulce.pl/wp-content/uploads/2015/03/dog-425067_12801.jpg" width="100%" height="100%" alt="" />';
@@ -271,6 +286,8 @@ $('.slide-wrap')
 					$(".change_text").append("Mauris commodo lorem eros, sit amet vehicula augue lacinia a. Donec nec felis eget augue interdum vehicula. Duis tincidunt eget dolor vel molestie.")
 					$("#change_descibe").empty();
 					$("#change_descibe").append("Kasper Sraster");
+                     $("#Opis").empty();
+                    $("#Opis").append("PRELEGENT");
 				});
 				//koniec prelegentow
                 //agenda

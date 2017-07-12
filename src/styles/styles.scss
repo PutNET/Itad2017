@@ -230,10 +230,11 @@ div.hover:hover div.appear {
         }
         &>h2{
             font-size: 28px;
-            padding-bottom: 5px;
-            padding-top: 5px;
-             border-top: 10px solid black;
-             border-bottom: 7px solid black;
+             margin: 0;
+            padding-bottom:10px;
+           // padding-bottom: 5px;
+           //padding-top: 5px;
+             
         }
         &>p{
             font-size: 10px;
@@ -241,16 +242,16 @@ div.hover:hover div.appear {
         }
         &>.preleg-descibe{
 
-            width: 74%;
-            height: 30%;
+            width: 50%;
+            height: 50%;
             margin: auto;
+            margin-top:5%;
             //background: white;
             float: left;
-            padding: 0 5px;
-            font-size: 12px;
+            padding: auto 5px;
+            font-size: 30px !important;
             text-align: justify;
             //margin: 4% 10%;
-            
             //border-top: 7px solid black;
                 &>#change_descibe{
                 text-align: center;
@@ -259,9 +260,9 @@ div.hover:hover div.appear {
         }
         &>#logo_prelegent{
             float: left;
-            width: 20%;
-            height: 20%;
-            margin: 3%;
+            width: 40%;
+            height: 40%;
+            margin: 5%;
             //background-image:url("http://webkod.pl/files/css/obrazek-01.png");
           
             //background-image: url("./logo/logo-2.jpg");
@@ -788,4 +789,11 @@ top: 0px;
     a{
         font-size: 100%;
     }
+}
+.featurette-divider{
+    height: 20px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 }

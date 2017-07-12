@@ -189,29 +189,28 @@ div.hover {
     font-size: 34px; }
   .section_itad2016 > h2 {
     font-size: 28px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    border-top: 10px solid black;
-    border-bottom: 7px solid black; }
+    margin: 0;
+    padding-bottom: 10px; }
   .section_itad2016 > p {
     font-size: 10px;
     text-align: justify; }
   .section_itad2016 > .preleg-descibe {
-    width: 74%;
-    height: 30%;
+    width: 50%;
+    height: 50%;
     margin: auto;
+    margin-top: 5%;
     float: left;
-    padding: 0 5px;
-    font-size: 12px;
+    padding: auto 5px;
+    font-size: 30px !important;
     text-align: justify; }
     .section_itad2016 > .preleg-descibe > #change_descibe {
       text-align: center;
       font-size: 30px; }
   .section_itad2016 > #logo_prelegent {
     float: left;
-    width: 20%;
-    height: 20%;
-    margin: 3%; }
+    width: 40%;
+    height: 40%;
+    margin: 5%; }
 
 .header_itad2016 {
   font-size: 50px;
@@ -638,3 +637,10 @@ span.turn {
 
 .flex-div a, .white-stripe a {
   font-size: 100%; }
+
+.featurette-divider {
+  height: 20px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5); }
