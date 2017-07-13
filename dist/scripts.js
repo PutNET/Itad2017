@@ -221,7 +221,7 @@ $('.slide-wrap')
 					$(".change_text").empty();
 					$(".change_text").append("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et lorem sed arcu faucibus lobortis. Nam tellus eros, laoreet ut ultricies fringilla, faucibus sed risus. Morbi euismod vestibulum massa cursus fringilla. ")
 					$("#change_descibe").empty();
-					$("#change_descibe").append("");
+					$("#change_descibe").append("To już było ! ");
                     $("#Opis").empty();
                     $("#Opis").append("ITAD 2016");
                     
@@ -231,7 +231,7 @@ $('.slide-wrap')
 					$(".change_text").empty();
 					$(".change_text").append("Quisque gravida auctor dapibus. Pellentesque porttitor purus convallis neque posuere dapibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec tempus eu nibh id pellentesque.")
 					$("#change_descibe").empty();
-					$("#change_descibe").append("Jestem Rychu");
+					$("#change_descibe").append("Marek Piekarczyk \"Microsoft\"");
                     $("#Opis").empty();
                     $("#Opis").append("PRELEGENT");
 				});
@@ -240,7 +240,7 @@ $('.slide-wrap')
 					$(".change_text").empty();
 					$(".change_text").append("Duis tincidunt eget dolor vel molestie. Praesent ac congue nunc, quis euismod dolor. Vivamus sed blandit nunc. Vivamus et risus eget ante lobortis ullamcorper.")
 					$("#change_descibe").empty();
-					$("#change_descibe").append("Marek Łowca");
+					$("#change_descibe").append("Marek Łowca \"google\"");
                      $("#Opis").empty();
                     $("#Opis").append("PRELEGENT");
 				}); 
@@ -249,7 +249,7 @@ $('.slide-wrap')
 					$(".change_text").empty();
 					$(".change_text").append("Morbi ut scelerisque arcu. Nulla fringilla faucibus efficitur. Mauris a accumsan diam. Sed in velit interdum, vulputate sapien ut, volutpat felis. Pellentesque molestie blandit tortor, nec tristique ligula aliquam sed.")
 					$("#change_descibe").empty();
-					$("#change_descibe").append("Zbyszek Bogdaniec");
+					$("#change_descibe").append("Zbyszek Bogdaniec \"Webdeveloper\"");
                      $("#Opis").empty();
                     $("#Opis").append("PRELEGENT");
 				});

@@ -175,7 +175,7 @@ div.hover {
   font-size: 150px; }
 
 .section_itad2016 {
-  font-size: 12px;
+  font-size: 2px;
   height: 60vh;
   min-height: 400px;
   width: 45%;
@@ -206,6 +206,9 @@ div.hover {
     .section_itad2016 > .preleg-descibe > #change_descibe {
       text-align: center;
       font-size: 30px; }
+    .section_itad2016 > .preleg-descibe > #change_text {
+      font-size: 50px;
+      font: arial helvetica; }
   .section_itad2016 > #logo_prelegent {
     float: left;
     width: 40%;

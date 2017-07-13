@@ -214,7 +214,7 @@ div.hover:hover div.appear {
 
 
 .section_itad2016{
-    font-size: 12px;
+    font-size: 2px;
     //border: 1px black solid;
     height: 60vh;
     min-height: 400px;
@@ -256,6 +256,10 @@ div.hover:hover div.appear {
                 &>#change_descibe{
                 text-align: center;
                 font-size: 30px;
+             }
+             &>#change_text{
+                 font-size: 50px;
+                 font: arial helvetica;
              }
         }
         &>#logo_prelegent{
