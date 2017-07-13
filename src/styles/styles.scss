@@ -366,6 +366,8 @@ div.hover:hover div.appear {
     height: 100%;
     background-color: black;
     opacity: .5;
+    color:white;
+    padding: 10% 20% 0 20%;
 }
 
 #about{
@@ -449,6 +451,14 @@ div.hover:hover div.appear {
         i{
             margin-right: 3%; 
         }
+        a{
+            text-decoration: none;
+            color:white;
+            &:hover{
+                text-decoration: none;
+                color:white;
+            }
+        }
 }
      
 .navigation {
@@ -465,7 +475,6 @@ div.hover:hover div.appear {
     }
     .navigation ul p {
       text-transform: uppercase;
-      font-size: 1.1vw;
       letter-spacing: 1px;
       margin-bottom:0;
       }
