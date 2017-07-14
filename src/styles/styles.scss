@@ -361,6 +361,22 @@ div.hover:hover div.appear {
 	background-attachment: fixed;
 }
 
+.stripe{
+    @extend .flex-div;
+    flex-direction: column;
+    background: white;
+    color: #454545;
+    width:100vw;
+    // transition: all .3s ease;
+    transform: rotate(3deg) scale(1.1);
+    padding: 2% 5% 2% 5%;
+    text-align:justify; 
+    &>p{
+        transform:scale(0.9);
+        font-size: 20px;
+    }
+}
+
 .overlay{
     width: 100%;
     height: 100%;
