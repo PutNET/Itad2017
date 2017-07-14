@@ -247,7 +247,7 @@ div.hover {
 .icon-mail-alt:hover {
   color: #4caf50; }
 
-.flex-div, .white-stripe {
+.flex-div, .white-stripe, .stripe {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -262,6 +262,18 @@ div.hover {
     transform: scale(0.9);
     font-size: 20px; }
 
+.stripe {
+  flex-direction: column;
+  background: white;
+  color: #454545;
+  width: 100vw;
+  transform: rotate(3deg) scale(1.1);
+  padding: 2% 5% 2% 5%;
+  text-align: justify; }
+  .stripe > p {
+    transform: scale(0.9);
+    font-size: 20px; }
+
 .section {
   background-size: cover;
   background-attachment: fixed; }
@@ -269,10 +281,8 @@ div.hover {
 .overlay {
   width: 100%;
   height: 100%;
-  background-color: black;
-  opacity: .5;
   color: white;
-  padding: 10% 20% 0 20%; }
+  padding: 14% 0 0 0; }
 
 #about {
   background-image: url(http://skipperkongen.dk/wp-content/uploads/2017/05/27340232-triangles-wallpapers.jpg); }
@@ -345,7 +355,8 @@ div.hover {
     margin-right: 3%; }
   .title a {
     text-decoration: none;
-    color: white; }
+    color: white;
+    font-size: 100%; }
     .title a:hover {
       text-decoration: none;
       color: white; }
@@ -645,7 +656,7 @@ span.turn {
 .leftarrow::after {
   clear: both; }
 
-.flex-div a, .white-stripe a {
+.flex-div a, .white-stripe a, .stripe a {
   font-size: 100%; }
 
 .featurette-divider {
